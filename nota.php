@@ -2,6 +2,7 @@
 session_start();
 include 'protect.php';
 include 'koneksi.php';
+$id=$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,6 +161,8 @@ include 'koneksi.php';
     <div id="all">
         <div id="content">
             <div class="container">
+                <a href="prosescetak.php?id=<?php echo $id;?>" class="btn btn-success pull-right" style="color: #fff; text-decoration: none; margin-right: 5px; margin-top: 10px;">Cetak Nota</a>
+                    <a href="all-menu.php" class="btn btn-warning pull-right" style="color: #fff; text-decoration: none; margin-right: 15px; margin-top: 10px;">Belanja lagi</a>
                 <div class="col-md-13" style="margin-top: 5px;" id="nota">
                     <div class="box" id="contact">
                         <h1>Nota Pembelian #<?php echo $_GET['id']; ?></h1>
@@ -244,7 +247,6 @@ include 'koneksi.php';
                         </div>
                         <!-- /.row -->
                     </div>
-                    <button class="btn btn-warning pull-right" id="printbtn">Print Preview</button>
                 </div>
                 <!-- /.col-md-9 -->
             </div>

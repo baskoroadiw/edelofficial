@@ -95,7 +95,7 @@
 						echo "<script>alert('Email telah terdaftar');</script>";
 					}
 					else if ($q_validasi != TRUE){
-						$query=$conn->query("INSERT INTO pelanggan VALUES('','$email','$password','$nama','$phone','$alamat')");
+						$query=$conn->query("INSERT INTO pelanggan(email_pelanggan,password_pelanggan,nama_pelanggan,telepon_pelanggan,alamat_pelanggan) VALUES('$email','$password','$nama','$phone','$alamat')");
 						if ($query) {
 							echo "<br>";
 							echo "<div class='alert alert-info'>Sign Up Succeeded</div>";
