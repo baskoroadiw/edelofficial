@@ -1,5 +1,2 @@
 # edelofficial
-Aplikasi Web Proyek Tingkat Semester 2
-
-# uploaded in
-2 April 2019
+Aplikasi Delivery Makanan PHP MYSQL (Proyek Tingkat 1 Semester 2)
